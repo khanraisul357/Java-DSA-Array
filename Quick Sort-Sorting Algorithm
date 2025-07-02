@@ -27,8 +27,7 @@ public class Quick_Sort {
 		arr[start]=arr[j];
 		arr[j]=temp;
 		
-		return j;
-		
+		return j;		
 		
 //If last element considered as pivot
 //		int pivot=arr[end];
