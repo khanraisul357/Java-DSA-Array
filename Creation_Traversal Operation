@@ -35,7 +35,7 @@ public class Creation_Traversal {
 		
 		//Traversal for secondArray
 		System.out.println("Traversal secondArray using a single loop:");
-        for(int i=0;i<secondArraySize;i++) {
+                for(int i=0;i<secondArraySize;i++) {
 			System.out.printf("secondArray[%d] = %d\n",i,secondArray[i]);
 		}
 		
