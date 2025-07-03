@@ -65,15 +65,11 @@ public class Creation_Traversal {
         
 		
                 //Traversal Method 2(for each loop)
-		System.out.println("Traversal firstArray using a single for each loop:");
-		
-                for(String a:firstArray) {
-        	
-		    System.out.println(a);
-			
+		System.out.println("Traversal firstArray using a single for each loop:");		
+                for(String a:firstArray) {       	
+		    System.out.println(a);		
 		}
       		
-
                 input.close();
         
 	}
