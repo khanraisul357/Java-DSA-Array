@@ -1,1 +1,83 @@
+import java.util.Scanner;
 
+public class Creation_Traversal {
+
+	public static void main(String[] args) {
+		
+		
+		
+		//Method 1:- Array Declaration & Initialization(compile-time initialization)
+		String[] firstArray= {"Najat","Raisul","Alamin","Asif","Rakib"};//No need to specify size.
+		int firstArraySize=firstArray.length;//arraySize=5.
+		
+		
+		//Traversal for firstArray
+		System.out.println("Traversal firstArray using a single loop:");
+		for(int i=0;i<firstArraySize;i++) {
+			System.out.printf("firstArray[%d] = %s\n",i,firstArray[i]);
+		}
+		
+		System.out.println();
+		System.out.println();
+		
+		//Method 2:- Array Declaration without initialization
+		int [] secondArray=new int[6];//Must specify array size at the time of declaration
+		int secondArraySize=secondArray.length;//arraySize=6.
+		
+		Scanner input=new Scanner(System.in);//creating object of Scanner class, to initialize elements.
+		
+		//Run-Time Initialization
+		for(int i=0;i<secondArraySize;i++) {
+			System.out.printf("secondArray[%d] = ",i);
+			secondArray[i]=input.nextInt();
+		}
+		
+		System.out.println();
+		System.out.println();
+		
+		//Traversal for secondArray
+		System.out.println("Traversal secondArray using a single loop:");
+        for(int i=0;i<secondArraySize;i++) {
+			System.out.printf("secondArray[%d] = %d\n",i,secondArray[i]);
+		}
+		
+        
+        System.out.println();
+		System.out.println();
+		
+		
+		//Traversal & Output Formatting
+		System.out.println("Formatted Output:");
+		
+		System.out.printf("{");
+		for (int i = 0; i <firstArraySize; i++) {
+			
+		    if (i > 0) {
+		        System.out.print(", ");
+		    }
+		    
+		    System.out.print(firstArray[i]);
+		    
+		}
+		System.out.printf("}");
+		
+		
+		System.out.println();
+		System.out.println();
+        
+		
+        //Traversal Method 2(for each loop)
+		System.out.println("Traversal firstArray using a single for each loop:");
+		
+        for(String a:firstArray) {
+        	
+			System.out.println(a);
+			
+		}
+      		
+
+        input.close();
+        
+	}
+
+}
