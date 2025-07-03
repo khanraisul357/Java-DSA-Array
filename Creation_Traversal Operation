@@ -45,8 +45,7 @@ public class Creation_Traversal {
 		
 		
 		//Traversal & Output Formatting
-		System.out.println("Formatted Output:");
-		
+		System.out.println("Formatted Output:");	
 		System.out.printf("{");
 		for (int i = 0; i <firstArraySize; i++) {
 			
