@@ -1,4 +1,5 @@
 package insertion_operation;
+import java.util.Scanner;
 
 class InsertionAtEnd {
 	
