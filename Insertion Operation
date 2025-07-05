@@ -1,6 +1,6 @@
 package insertion_operation;
 
-public class InsertionAtEnd {
+class InsertionAtEnd {
 	
 	//Insertion At Ending/last position/last index(Best Case) in an Array-------> Time Complexity = O(1)
 	public static void insertAtEnd(int[] arr,int size,int data) {
