@@ -81,3 +81,27 @@ class InsertionAtSpecificPosition {
 	     }
 		
 }
+
+
+
+class InsertionInUnsortedArray {
+	
+	//Insertion in an Unsorted Array-------> Time Complexity O(1)
+	public static void insertInUnsortedArray(int[] arr,int size,int data,int position) {
+		
+		if(size>=arr.length) {
+			System.out.println("Cannot Insert, Overflow Condition!");
+		}
+						
+		arr[size]=arr[position-1];
+		arr[position-1]=data;
+		size++;
+						
+		System.out.printf("Value = %d, Inserted  at (position = %d & index = %d).\n",data,position,position-1);
+		for(int i=0;i<size;i++) {
+			System.out.printf("arr[%d] = %d\n",i,arr[i]);
+		}
+				
+	}
+		
+}
