@@ -59,25 +59,25 @@ class InsertionAtSpecificPosition {
  class InsertionAtStart {
 
 	    //Insertion At Beginning/1st position/0th index(Worst Case) in an Sorted Array-------> Time Complexity = O(n)
-		public static void insertAtStart(int[] arr,int size,int data) {
+	    public static void insertAtStart(int[] arr,int size,int data) {
+
 			if(size>=arr.length) {
 				System.out.println("Cannot Insert, Overflow Condition!");
 			}
 		
-				for(int i=size-1;i>=1-1;i--) {//since inserting at position 1.
-					arr[i+1]=arr[i];
-				}
+			for(int i=size-1;i>=1-1;i--) {//since inserting at position 1.
+				arr[i+1]=arr[i];
+			}
 				
-				arr[1-1]=data;
-				size++;
+			arr[1-1]=data;
+			size++;
 				
-				System.out.printf("Value = %d, Inserted  at (position = 1 & index = 0).\n",data);
-				for(int i=0;i<size;i++) {
-					System.out.printf("arr[%d] = %d\n",i,arr[i]);
-				}
+			System.out.printf("Value = %d, Inserted  at (position = 1 & index = 0).\n",data);
+			for(int i=0;i<size;i++) {
+				System.out.printf("arr[%d] = %d\n",i,arr[i]);
+			}
+				
 			
-			
-			
-		}
+	     }
 		
 }
