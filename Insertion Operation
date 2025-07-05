@@ -21,12 +21,11 @@ class InsertionAtEnd {
 }
 
 
-
-
 class InsertionAtSpecificPosition {
 	
 	    //Insertion at any specific position(Average Case) in an Array-------> Time Complexity = O(n-p-1)/O(n)
-		public static void insertAtSpecificPosition(int[] arr,int size,int data,int position) {
+	    public static void insertAtSpecificPosition(int[] arr,int size,int data,int position) {
+
 			if(size>=arr.length) {
 				System.out.println("Cannot Insert, Overflow Condition!");
 			}
@@ -48,8 +47,9 @@ class InsertionAtSpecificPosition {
 				for(int i=0;i<size;i++) {
 					System.out.printf("arr[%d] = %d\n",i,arr[i]);
 				}
+
 			}
-			
-			
-		}
+						
+	   }
+
 }
