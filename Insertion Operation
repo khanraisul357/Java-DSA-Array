@@ -1,1 +1,23 @@
+package insertion_operation;
+
+public class InsertionAtEnd {
+	
+	//Insertion At Ending/last position/last index(Best Case) in an Array-------> Time Complexity = O(1)
+		public static void insertAtEnd(int[] arr,int size,int data) {
+			
+			if(size>=arr.length) {
+				System.out.println("Cannot Insert, Overflow Condition!");
+			}
+				
+				arr[size]=data;
+				size++;
+				
+				System.out.printf("Value = %d, Inserted  at (position = %d & index = %d).\n",data,size,size-1);
+				for(int i=0;i<size;i++) {
+					System.out.printf("arr[%d] = %d\n",i,arr[i]);
+				}
+					
+			
+		}
+}
 
