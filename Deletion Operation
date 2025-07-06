@@ -1,1 +1,46 @@
+package array_operations.deletion_operation;
 
+
+public class DeletionFromEnd {
+	
+	public static boolean checkingUnderflow(int[] arr) {
+		
+		boolean isArrayEmpty=true;//Considering array is empty(i.e. all elements are 0 in the array)
+		
+		for(int a:arr) {
+			if(a!=0) {
+				isArrayEmpty=false;
+				break;
+			}
+		}
+		
+		return isArrayEmpty;
+	}
+	
+	
+	
+	//Deletion From Ending/last position/last index(Best Case) in an Array-------> Time Complexity = O(1)
+    public static void deleteFromEnd(int[] arr,int numberOfElement) {
+    	
+    	int currentSizeOfArray=numberOfElement;
+    	
+    	if(checkingUnderflow(arr)) {
+    		System.out.println("Cannot Insert, Underflow Condition!");
+    	}
+    	
+		else {
+			
+			int position=currentSizeOfArray;
+			int data=arr[position-1];
+			currentSizeOfArray--;
+			
+			System.out.printf("Value = %d, Deleted  from (position = %d & index = %d).\n",data,position,position-1);
+			for(int i=0;i<currentSizeOfArray;i++) {
+				System.out.printf("arr[%d] = %d\n",i,arr[i]);
+			}
+			
+		}
+    	
+	}
+    
+}
