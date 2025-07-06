@@ -19,16 +19,16 @@ class DeletionFromEnd {
 	
 	
 	
-	//Deletion From Ending/last position/last index(Best Case) in an Array-------> Time Complexity = O(1)
-    public static void deleteFromEnd(int[] arr,int numberOfElement) {
+        //Deletion From Ending/last position/last index(Best Case) in an Array-------> Time Complexity = O(1)
+        public static void deleteFromEnd(int[] arr,int numberOfElement) {
+
+    	       int currentSizeOfArray=numberOfElement;
     	
-    	int currentSizeOfArray=numberOfElement;
+    	       if(checkingUnderflow(arr)) {
+    		        System.out.println("Cannot Insert, Underflow Condition!");
+    	       }
     	
-    	if(checkingUnderflow(arr)) {
-    		System.out.println("Cannot Insert, Underflow Condition!");
-    	}
-    	
-		else {
+	       else {
 			
 			int position=currentSizeOfArray;
 			int data=arr[position-1];
