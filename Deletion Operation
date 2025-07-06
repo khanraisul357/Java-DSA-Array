@@ -49,9 +49,8 @@ class DeletionFromEnd {
 
 
  class DeletionFromSpecificPosition {
-	
-	
-    public static boolean checkingUnderflow(int[] arr) {
+		
+       public static boolean checkingUnderflow(int[] arr) {
 		
 		boolean isArrayEmpty=true;//Considering array is empty(i.e. all elements are 0 in the array)
 		
@@ -63,7 +62,7 @@ class DeletionFromEnd {
 		}
 		
 		return isArrayEmpty;
-	}
+       }
     
     
     
