@@ -45,3 +45,62 @@ class DeletionFromEnd {
 	}
     
 }
+
+
+
+ class DeletionFromSpecificPosition {
+	
+	
+    public static boolean checkingUnderflow(int[] arr) {
+		
+		boolean isArrayEmpty=true;//Considering array is empty(i.e. all elements are 0 in the array)
+		
+		for(int a:arr) {
+			if(a!=0) {
+				isArrayEmpty=false;
+				break;
+			}
+		}
+		
+		return isArrayEmpty;
+	}
+    
+    
+    
+    //Deletion From specific position(Average Case) in an Array-------> Time Complexity = O(n-p)= O(n)
+    public static void deleteFromSpecificPosition(int[] arr,int numberOfElement,int position) {
+    	
+    	int currentSizeOfArray=numberOfElement;
+    	
+    	if(checkingUnderflow(arr)) {
+    		System.out.println("Cannot Insert, Underflow Condition!");
+    	}
+    	
+    	else if(position>currentSizeOfArray) {
+			System.out.println("Invalid Position! Cannot delete from position above " + currentSizeOfArray);
+		}
+    	
+		else if(position<1) {
+			System.out.println("Invalid Position! Deletion can only be done from position>=1.");
+		}
+    	
+		else {
+			
+			int data=arr[position-1];
+			
+			for(int i=position-1;i<currentSizeOfArray-1;i++) {
+				arr[i]=arr[i+1];
+			}
+			
+			currentSizeOfArray--;
+			
+			System.out.printf("Value = %d, Deleted  from (position = %d & index = %d).\n",data,position,position-1);
+			for(int i=0;i<currentSizeOfArray;i++) {
+				System.out.printf("arr[%d] = %d\n",i,arr[i]);
+			}
+			
+		}
+    	
+	}
+    
+}
