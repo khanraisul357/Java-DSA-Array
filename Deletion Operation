@@ -154,3 +154,45 @@ class DeletionFromStart {
 	}
 
 }
+
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int array[]=new int[10];
+		
+		System.out.print("Enter number of initial element in array: ");
+		
+		int numberOfElement=input.nextInt();
+		
+		for(int i=0;i<numberOfElement;i++) {
+			
+			System.out.printf("arr[%d] = ",i);
+			array[i]=input.nextInt();
+			
+		}
+		
+		
+		System.out.println();
+		System.out.println();
+		
+		DeletionFromEnd.deleteFromEnd(array, numberOfElement);
+		
+		System.out.println();
+		System.out.println();
+		
+		DeletionFromSpecificPosition.deleteFromSpecificPosition(array,numberOfElement,3);
+	
+		System.out.println();
+		System.out.println();
+		
+		DeletionFromStart.deleteFromStart(array,numberOfElement);
+		
+		input.close();
+
+	}
+
+}
