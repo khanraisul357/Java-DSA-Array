@@ -1,4 +1,5 @@
 package array_operations.deletion_operation;
+import java.util.Scanner;
 
 
 class DeletionFromEnd {
