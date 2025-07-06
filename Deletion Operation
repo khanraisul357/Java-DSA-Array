@@ -104,3 +104,52 @@ class DeletionFromEnd {
     
 }
 
+
+
+class DeletionFromStart {
+	
+	public static boolean checkingUnderflow(int[] arr) {
+		
+		boolean isArrayEmpty=true;//Considering array is empty(i.e. all elements are 0 in the array)
+		
+		for(int a:arr) {
+			if(a!=0) {
+				isArrayEmpty=false;
+				break;
+			}
+		}
+		
+		return isArrayEmpty;
+	}
+	
+	
+	
+	//Deletion From Beginning/1st position/0th index(Worst Case) in an Sorted Array-------> Time Complexity = O(n-p)= O(n)
+    public static void deleteFromStart(int[] arr,int numberOfElement) {
+    	
+        int currentSizeOfArray=numberOfElement;
+    	
+    	if(checkingUnderflow(arr)) {
+    		System.out.println("Cannot Insert, Underflow Condition!");
+    	}
+    	
+    	
+		else {
+			int position=1;
+			int data=arr[position-1];
+			
+			for(int i=position-1;i<currentSizeOfArray-1;i++) {
+				arr[i]=arr[i+1];
+			}
+			
+			currentSizeOfArray--;
+			
+			System.out.printf("Value = %d, Deleted  from (position = %d & index = %d).\n",data,position,position-1);
+			for(int i=0;i<currentSizeOfArray;i++) {
+				System.out.printf("arr[%d] = %d\n",i,arr[i]);
+			}
+			
+		}
+    	
+	}
+}
