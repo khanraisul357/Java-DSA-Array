@@ -125,13 +125,13 @@ class DeletionFromStart {
 	
 	
 	//Deletion From Beginning/1st position/0th index(Worst Case) in an Sorted Array-------> Time Complexity = O(n-p)= O(n)
-    public static void deleteFromStart(int[] arr,int numberOfElement) {
+        public static void deleteFromStart(int[] arr,int numberOfElement) {
     	
-        int currentSizeOfArray=numberOfElement;
+                int currentSizeOfArray=numberOfElement;
     	
-    	if(checkingUnderflow(arr)) {
-    		System.out.println("Cannot Insert, Underflow Condition!");
-    	}
+    	        if(checkingUnderflow(arr)) {
+    		        System.out.println("Cannot Insert, Underflow Condition!");
+    	        }
     	
     	
 		else {
@@ -150,6 +150,7 @@ class DeletionFromStart {
 			}
 			
 		}
-    	
+
 	}
+
 }
