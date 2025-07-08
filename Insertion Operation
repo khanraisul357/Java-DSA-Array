@@ -97,31 +97,53 @@ class InsertionAtSpecificPosition {
 
 
 
- class InsertionAtStart {
+package array_operations.insertion_operation;
 
-	    //Insertion At Beginning/1st position/0th index(Worst Case) in an Sorted Array-------> Time Complexity = O(n)
-	    public static void insertAtStart(int[] arr,int size,int data) {
-
-			if(size>=arr.length) {
-				System.out.println("Cannot Insert, Overflow Condition!");
+public  class InsertionAtStart {
+	
+	public static boolean checkingOverflow(int[] arr,int currentSizeOfArray) {
+		
+		boolean isArrayFull=false;//Considering array is not full(i.e. number of elements not equal to array size)
+			if(arr.length==currentSizeOfArray) {
+				isArrayFull=true;
 			}
 		
-			for(int i=size-1;i>=1-1;i--) {//since inserting at position 1.
+		return isArrayFull;
+	}
+	
+	
+	//Insertion At Beginning/1st position/0th index(Worst Case) in an Sorted Array-------> Time Complexity = O{n-(p-1) = O(n)
+	public static void insertAtStart(int[] arr,int numberOfElement,int data) {
+		
+		int currentSizeOfArray=numberOfElement;
+		
+		if(checkingOverflow(arr,currentSizeOfArray)) {
+			System.out.println("Cannot Insert, Overflow Condition!");
+        }
+		
+		
+		else {
+			
+			int position=1;
+			
+			for(int i=currentSizeOfArray-1;i>=position-1;i--) {
 				arr[i+1]=arr[i];
 			}
-				
-			arr[1-1]=data;
-			size++;
-				
-			System.out.printf("Value = %d, Inserted  at (position = 1 & index = 0).\n",data);
-			for(int i=0;i<size;i++) {
+			
+			arr[position-1]=data;
+			currentSizeOfArray++;
+			
+			System.out.printf("Value = %d, Inserted  at (position = %d & index = %d).\n",data,position,position-1);
+			for(int i=0;i<currentSizeOfArray;i++) {
 				System.out.printf("arr[%d] = %d\n",i,arr[i]);
 			}
-				
 			
-	     }
-		
+		}
+				
+	}
+	
 }
+
 
 
 
