@@ -1,24 +1,45 @@
-package insertion_operation;
+package array_operations.insertion_operation;
 import java.util.Scanner;
+
 
 class InsertionAtEnd {
 	
-	//Insertion At Ending/last position/last index(Best Case) in an Array-------> Time Complexity = O(1)
-	public static void insertAtEnd(int[] arr,int size,int data) {
-
-               if(size>=arr.length) {
-		    System.out.println("Cannot Insert, Overflow Condition!");
-	       }
-				
-	       arr[size]=data;
-	       size++;
-				
-	       System.out.printf("Value = %d, Inserted  at (position = %d & index = %d).\n",data,size,size-1);
-	       for(int i=0;i<size;i++) {
-		    System.out.printf("arr[%d] = %d\n",i,arr[i]);
-	       }
-
+	public static boolean checkingOverflow(int[] arr,int currentSizeOfArray) {
+		
+		boolean isArrayFull=false;//Considering array is not full(i.e. number of elements not equal to array size)
+			if(arr.length==currentSizeOfArray) {
+				isArrayFull=true;
+			}
+		
+		return isArrayFull;
 	}
+	
+	
+	//Insertion At Ending/last position/last index(Best Case) in an Array-------> Time Complexity = O(1)
+	public static void insertAtEnd(int[] arr,int numberOfElement,int data) {
+		
+		int currentSizeOfArray=numberOfElement;
+		
+		if(checkingOverflow(arr,currentSizeOfArray)) {
+			
+			System.out.println("Cannot Insert, Overflow Condition!");
+			
+        }
+		
+		else {
+			
+	        arr[currentSizeOfArray]=data;
+	        currentSizeOfArray++;
+				
+	        System.out.printf("Value = %d, Inserted  at (position = %d & index = %d).\n",data, currentSizeOfArray, currentSizeOfArray-1);
+	        for(int i=0;i<currentSizeOfArray;i++) {
+	            System.out.printf("arr[%d] = %d\n",i,arr[i]);
+	        }
+			
+		}
+        
+	}
+	
 }
 
 
