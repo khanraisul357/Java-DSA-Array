@@ -97,8 +97,6 @@ class InsertionAtSpecificPosition {
 
 
 
-package array_operations.insertion_operation;
-
 public  class InsertionAtStart {
 	
 	public static boolean checkingOverflow(int[] arr,int currentSizeOfArray) {
