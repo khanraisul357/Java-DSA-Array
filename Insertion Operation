@@ -194,42 +194,49 @@ class InsertionInUnsortedArray {
 
 
 
-public class Main {
-	
-	public static void main(String[] args) {
-		int[] array=new int[10];
+import java.util.Scanner;
 
-		int tempArraySize=5;//indicating number of element present in the array before insertion.
-		
+public class Main {
+
+	public static void main(String[] args) {
+
 		Scanner input=new Scanner(System.in);
+		int array[]=new int[10];
 		
-		for(int i=0;i<tempArraySize;i++) {
+		System.out.print("Enter number of initial element in array: ");
+		
+		int numberOfElement=input.nextInt();
+		
+		for(int i=0;i<numberOfElement;i++) {
+			
 			System.out.printf("arr[%d] = ",i);
 			array[i]=input.nextInt();
+			
 		}
 		
-		System.out.println();
-		System.out.println();
-		
-		InsertionAtEnd.insertAtEnd(array,tempArraySize,25);
 		
 		System.out.println();
 		System.out.println();
 		
-		InsertionAtSpecificPosition.insertAtSpecificPosition(array,tempArraySize,7,3);
+		InsertionAtEnd.insertAtEnd(array,numberOfElement,25);
 		
 		System.out.println();
 		System.out.println();
 		
-		InsertionAtStart.insertAtStart(array,tempArraySize,99);
+		InsertionAtSpecificPosition.insertAtSpecificPosition(array,numberOfElement,3,3);
 		
 		System.out.println();
 		System.out.println();
 		
-		InsertionInUnsortedArray.insertInUnsortedArray(array,tempArraySize,52,3);
+		InsertionAtStart.insertAtStart(array,numberOfElement,99);
+		
+		System.out.println();
+		System.out.println();
+		
+		InsertionInUnsortedArray.insertInUnsortedArray(array,numberOfElement,3,52);
 		
 		input.close();
+
 	}
-	
 
 }
