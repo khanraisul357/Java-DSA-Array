@@ -144,7 +144,7 @@ class InsertionAtStart {
 
 
 
-public class InsertionInUnsortedArray {
+class InsertionInUnsortedArray {
 	
 	public static boolean checkingOverflow(int[] arr,int currentSizeOfArray) {
 		
