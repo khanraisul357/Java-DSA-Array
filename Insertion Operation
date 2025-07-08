@@ -44,7 +44,7 @@ class InsertionAtEnd {
 
 
 
-public class InsertionAtSpecificPosition {
+class InsertionAtSpecificPosition {
 	
 	public static boolean checkingOverflow(int[] arr,int currentSizeOfArray) {
 		
