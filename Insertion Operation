@@ -144,8 +144,6 @@ class InsertionAtStart {
 
 
 
-package array_operations.insertion_operation;
-
 public class InsertionInUnsortedArray {
 	
 	public static boolean checkingOverflow(int[] arr,int currentSizeOfArray) {
