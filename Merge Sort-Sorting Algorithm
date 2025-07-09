@@ -7,20 +7,3 @@ public class Bubble_Sort {
 
 
 
-	public void display(int arr[],int size){
-		for(int a:arr){
-			System.out.println(a);
-		}
-	}
-
-	public static void main(String[] args) {
-		int array[]={15,3,9,7,1,12};
-        int size=array.length;
-
-		Bubble_Sort arr=new Bubble_Sort();
-		
-		arr.sort(array,size);
-		arr.display(array,size);
-	}
-
-}
