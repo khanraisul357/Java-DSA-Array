@@ -35,3 +35,18 @@ class Bubble_Sort {
 
 
 
+public class Main {
+
+	public static void main(String[] args) {
+		
+	int array[]={15,3,9,7,1,12};
+        int size=array.length;
+
+		Bubble_Sort arr=new Bubble_Sort();
+		
+		arr.sort(array,size);
+		arr.display(array,size);
+
+	}
+
+}
