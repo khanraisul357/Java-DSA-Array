@@ -1,6 +1,6 @@
 package bubble_sort;
 
-public class Bubble_Sort {
+class Bubble_Sort {
 
 	//Sorting a random order array (Average Case)--> Time Complexity = O(n^2)
 	public void sort(int arr[],int size){
