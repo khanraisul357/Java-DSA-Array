@@ -1,1 +1,36 @@
+package bubble_sort;
+
+public class Bubble_Sort {
+
+	//Sorting a random order array (Average Case)--> Time Complexity = O(n^2)
+	public void sort(int arr[],int size){
+
+		for(int i=0;i<size-1;i++){
+			for(int j=0;j<size-i-1;j++){
+				if(arr[j]>arr[j+1]){
+					int temp=arr[j+1];
+					arr[j+1]=arr[j];
+					arr[j]=temp;
+				}
+			}
+		}
+	}
+
+	public void display(int arr[],int size){
+		for(int a:arr){
+			System.out.println(a);
+		}
+	}
+
+	public static void main(String[] args) {
+		int array[]={15,3,9,7,1,12};
+        int size=array.length;
+
+		Bubble_Sort arr=new Bubble_Sort();
+		
+		arr.sort(array,size);
+		arr.display(array,size);
+	}
+
+}
 
