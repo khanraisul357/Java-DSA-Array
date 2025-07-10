@@ -70,7 +70,7 @@ class SortingSortedArrayInAscendingOrder {
 
 
 
-public class SortingRandomOrderArrayInAscendingOrder {
+class SortingRandomOrderArrayInAscendingOrder {
 
 	
 	//Sorting a random order array(Average Case)--> Time Complexity = O(n^2)
