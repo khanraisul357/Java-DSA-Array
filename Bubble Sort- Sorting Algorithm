@@ -70,7 +70,7 @@ class SortingSortedArrayInAscendingOrder {
 
 
 
-package sorting_algorithm.bubble_sort.ascending_order;
+
 
 public class SortingRandomOrderArrayInAscendingOrder {
 
