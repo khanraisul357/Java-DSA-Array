@@ -61,8 +61,16 @@ class ArrayTraversal {
 
 
 
+public class Main {
 
-	
-	
+	public static void main(String[] args) {
+		
+		ArrayTraversal.arrayTraversalUsingSingleLoop();
+		
+		System.out.println();
+		
+		ArrayTraversal.arrayTraversalUsingForEachLoop();
 
+	}
 
+}	
