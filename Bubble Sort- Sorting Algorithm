@@ -1,1 +1,70 @@
+package sorting_algorithm.bubble_sort.ascending_order;
+
+class SortingSortedArrayInAscendingOrder {
+	
+	
+	//Sorting a sorted array(Best Case) with optimization--> Time Complexity = O(n)
+	public static void sortSortedArrayWithOptimization(int[] arr,int size) {
+		boolean swapOccured=false;
+		
+		for(int i=0;i<size-1;i++) {
+			
+			for(int j=0;j<size-i-1;j++) {
+				
+				if(arr[j]>arr[j+1]) {
+					int temp=arr[j+1];
+					arr[j+1]=arr[j];
+					arr[j]=temp;
+					swapOccured=true;
+				}
+				
+			}
+			
+			if(!swapOccured) {
+				break;
+			}
+			
+		}
+		
+		if(!swapOccured) {
+			System.out.println("Array is already sorted in ascending order!");
+		}
+		
+		else {
+			for(int a:arr) {
+				System.out.print(a+" ");
+			}
+		}
+		
+	}
+	
+	
+	//Sorting a sorted array(Best Case) without optimization--> Time Complexity = O(n^2)
+	public static void sortSortedArrayWithoutOptimization(int[] arr,int size) {
+		
+		
+		for(int i=0;i<size-1;i++) {
+			
+			for(int j=0;j<size-i-1;j++) {
+				
+				if(arr[j]>arr[j+1]) {
+					
+					int temp=arr[j+1];
+					arr[j+1]=arr[j];
+					arr[j]=temp;
+					
+				}
+				
+			}
+						
+		}
+		
+		for(int a:arr) {
+			System.out.print(a+" ");
+		}
+			
+	}
+		
+	
+}
 
