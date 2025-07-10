@@ -1,7 +1,7 @@
 package array_operations.creation_traversal_operation;
 import java.util.Scanner;
 
-public class ArrayCreation {
+class ArrayCreation {
 	
 	public static void arrayCreation() {
 		
@@ -21,6 +21,42 @@ public class ArrayCreation {
 				
 	}
 	    
+}
+
+
+
+class ArrayTraversal {
+	
+	public static void arrayTraversalUsingSingleLoop() {
+		
+		int[] array= {11,4,9,2,16};
+		
+		System.out.print("{");
+		//traverse through a single loop
+		for(int i=0;i<array.length;i++) {
+			
+			//output formating
+			if(i>0) {
+				System.out.print(", ");
+			}
+			System.out.print(array[i]);
+		}
+		System.out.print("}");
+		
+	}
+	
+	
+public static void arrayTraversalUsingForEachLoop() {
+		
+		int[] array= {11,4,9,2,16};
+		
+		//traverse through a single loop
+		for(int a:array) {
+			System.out.print(a+" ");
+		}
+		
+	}
+
 }
 
 
