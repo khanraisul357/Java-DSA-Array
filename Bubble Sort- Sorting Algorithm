@@ -68,3 +68,48 @@ class SortingSortedArrayInAscendingOrder {
 
 }
 
+
+
+package sorting_algorithm.bubble_sort.ascending_order;
+
+public class SortingRandomOrderArrayInAscendingOrder {
+
+	
+	//Sorting a random order array(Average Case)--> Time Complexity = O(n^2)
+	public static void sortRandomOrderArray(int arr[],int size){		
+		
+		boolean swapOccured=false;
+		
+		for(int i=0;i<size-1;i++) {
+			
+			for(int j=0;j<size-i-1;j++) {
+				
+				if(arr[j]>arr[j+1]) {
+					int temp=arr[j+1];
+					arr[j+1]=arr[j];
+					arr[j]=temp;
+					swapOccured=true;
+				}
+				
+			}
+			
+			if(!swapOccured) {
+				break;
+			}
+			
+		}
+		
+		if(!swapOccured) {
+			System.out.println("Array is already sorted in ascending order!");
+		}
+		
+		else {
+			for(int a:arr) {
+				System.out.print(a+" ");
+			}
+		}
+		
+	}
+
+	
+}
