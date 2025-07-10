@@ -18,7 +18,9 @@ class ArrayCreation {
 			System.out.printf("arr[%d] = ",i);
 			arr[i]=input.nextInt();
 		}
-				
+
+                input.close();
+
 	}
 	    
 }
