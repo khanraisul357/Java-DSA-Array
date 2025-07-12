@@ -114,3 +114,46 @@ class SortingRandomOrderArrayInAscendingOrder {
 
 
 
+package sorting_algorithm.bubble_sort.ascending_order;
+
+//Reverse Sorted means--> if we want to sort in ascending order, array is already sorted in descending order & vice-versa
+public class SortingReverseSortedArrayInAscendingOrder {
+	
+	//Sorting a reversed order/reverse sorted array(Worst Case)--> Time Complexity = O(n^2)
+	public static void sortReverseSortedArray(int[] arr,int size) {
+		
+		boolean swapOccured=false;
+		
+		for(int i=0;i<size-1;i++) {
+			
+			for(int j=0;j<size-i-1;j++) {
+				
+				if(arr[j]>arr[j+1]) {
+					
+					int temp=arr[j+1];
+					arr[j+1]=arr[j];
+					arr[j]=temp;
+					swapOccured=true;
+					
+				}
+			}
+			
+			if(!swapOccured) {
+				break;
+			}
+		}
+		
+		if(!swapOccured) {
+			System.out.println("Array is already sorted in ascending order!");
+		}
+		
+		else {
+			for(int a:arr) {
+				System.out.print(a+" ");
+			}
+		}
+		
+	}
+	
+	
+}
