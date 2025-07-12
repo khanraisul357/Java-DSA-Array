@@ -1,1 +1,63 @@
+package sorting_algorithm.selection_sort.ascending_order;
 
+public class SortingInAscendingOrder {
+
+	
+	//In best/average/worst case--> Time Complexity = O(n^2)
+	public static void selectionSort(int [] arr,int size) {
+		
+		boolean swapOccured=false;
+		
+		for(int i=0;i<size-1;i++) {
+			
+			int smallestElementIndex=i;
+			
+			for(int j=i+1;j<size;j++) {
+				
+				if(arr[j]<arr[smallestElementIndex]) {
+					smallestElementIndex=j;
+					swapOccured=true;
+				}
+				
+			}
+			
+		    int temp=arr[i];
+		    arr[i]=arr[smallestElementIndex];
+		    arr[smallestElementIndex]=temp;
+		
+		    if(!swapOccured) {
+		    	break;
+		    }
+		    
+		}
+		
+		if(!swapOccured) {
+			System.out.println("Array is already sorted in adcending order!");
+	    }
+		else {
+			for(int a:arr) {
+				System.out.print(a+" ");
+			}
+		}
+		
+	}
+	
+
+}
+
+
+//for(int i=0;i<n-1;i++) {
+//	
+//	int smallestElementIndex=i;
+//	
+//	for(int j=i+1;j<n;j++) {
+//		if(arr[j]<arr[smallestElementIndex]) {
+//			smallestElementIndex=j;
+//		}
+//	}
+//	
+//	int temp=arr[i];
+//	arr[i]=arr[smallestElementIndex];
+//	arr[smallestElementIndex]=temp;
+//	
+//}
