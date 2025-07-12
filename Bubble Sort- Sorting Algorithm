@@ -114,7 +114,6 @@ class SortingRandomOrderArrayInAscendingOrder {
 
 
 
-package sorting_algorithm.bubble_sort.ascending_order;
 
 //Reverse Sorted means--> if we want to sort in ascending order, array is already sorted in descending order & vice-versa
 public class SortingReverseSortedArrayInAscendingOrder {
