@@ -64,3 +64,55 @@ public class Main {
 
 
 --> In Descending Order:
+
+package sorting_algorithm.selection_sort.descending_order;
+
+class SortingInDescendingOrder {
+
+	
+	//In best/average/worst case--> Time Complexity = O(n^2)
+	public static void selectionSort(int [] arr,int size) {		
+		
+		for(int i=0;i<size-1;i++) {
+			
+			int largestElementIndex=i;
+			
+			for(int j=i+1;j<size;j++) {
+				
+				if(arr[j]>arr[largestElementIndex]) {					
+					largestElementIndex=j;				
+				}
+				
+			}
+			
+		    int temp=arr[i];
+		    arr[i]=arr[largestElementIndex];
+		    arr[largestElementIndex]=temp;
+		    
+		}		
+		
+		for(int a:arr) {
+			System.out.print(a+" ");
+		}		
+		
+	}
+	
+
+}
+
+
+//for(int i=0;i<n-1;i++) {
+//	
+//	int smallestElementIndex=i;
+//	
+//	for(int j=i+1;j<n;j++) {
+//		if(arr[j]<arr[smallestElementIndex]) {
+//			smallestElementIndex=j;
+//		}
+//	}
+//	
+//	int temp=arr[i];
+//	arr[i]=arr[smallestElementIndex];
+//	arr[smallestElementIndex]=temp;
+//	
+//}
