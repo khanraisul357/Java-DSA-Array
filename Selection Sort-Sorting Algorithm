@@ -48,12 +48,5 @@ class SortingInAscendingOrder {
 
 
 
-
-//		}
-//	}
-//	
-//	int temp=arr[i];
-//	arr[i]=arr[smallestElementIndex];
-//	arr[smallestElementIndex]=temp;
 //	
 //}
