@@ -1,6 +1,6 @@
 package sorting_algorithm.selection_sort.ascending_order;
 
-public class SortingInAscendingOrder {
+class SortingInAscendingOrder {
 
 	
 	//In best/average/worst case--> Time Complexity = O(n^2)
