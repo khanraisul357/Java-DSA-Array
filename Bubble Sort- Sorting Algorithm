@@ -114,9 +114,8 @@ class SortingRandomOrderArrayInAscendingOrder {
 
 
 
-
 //Reverse Sorted means--> if we want to sort in ascending order, array is already sorted in descending order & vice-versa
-public class SortingReverseSortedArrayInAscendingOrder {
+class SortingReverseSortedArrayInAscendingOrder {
 	
 	//Sorting a reversed order/reverse sorted array(Worst Case)--> Time Complexity = O(n^2)
 	public static void sortReverseSortedArray(int[] arr,int size) {
