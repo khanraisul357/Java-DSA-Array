@@ -29,6 +29,23 @@ class InsertionSortInAscendingOrder {
 		}
 		
 	}
-	
+
+
+
+package sorting_algorithm.insertion_sort.ascending_order;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int[] array= {16,8,2,10,4,13};
+		int size=array.length;
+		
+		InsertionSortInAscendingOrder.insertionSort(array,size);
+
+	}
+
+}
+
 -->In Ascending Order
 }
