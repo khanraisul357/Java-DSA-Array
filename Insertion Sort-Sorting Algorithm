@@ -1,6 +1,6 @@
 package sorting_algorithm.insertion_sort.ascending_order;
 
-public class InsertionSortInAscendingOrder {
+class InsertionSortInAscendingOrder {
 
 	
 	//In best case--> Time Complexity= O(n) & In average/worst case--> Time Complexity= O(n^2)
