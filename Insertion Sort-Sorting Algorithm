@@ -32,7 +32,7 @@ class InsertionSortInAscendingOrder {
 
 
 
-package sorting_algorithm.insertion_sort.ascending_order;
+
 
 public class Main {
 
