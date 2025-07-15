@@ -45,7 +45,6 @@ public class Quick_Sort {
 //		int temp=arr[i];
 //		arr[i]=arr[end];
 //		arr[end]=temp;
-//		
 
 		
 	}
