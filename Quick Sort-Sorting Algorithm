@@ -39,9 +39,8 @@ public class Quick_Sort {
 //				arr[i]=arr[j];
 //				arr[j]=temp;
 //			}
-//		}
-//		
-//		i++;
+
+
 
 
 
