@@ -46,7 +46,7 @@ public class Quick_Sort {
 //		arr[i]=arr[end];
 //		arr[end]=temp;
 //		
-//		return end;
+
 		
 	}
 	public static void quickSort(int[] arr,int start,int end) {
