@@ -10,9 +10,7 @@
 
 
 
-	public static void display(int[] arr){
-		for(int a:arr){
-			System.out.println(a);
+
 		}
 	}
 	
