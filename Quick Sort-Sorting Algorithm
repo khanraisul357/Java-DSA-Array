@@ -4,14 +4,6 @@
 		
 
 
-			}
-			
-		}
-		
-		int temp=arr[start];
-		arr[start]=arr[j];
-		arr[j]=temp;
-		
 		
 		
 
