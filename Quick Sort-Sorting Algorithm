@@ -34,25 +34,7 @@ public class Quick_Sort {
 //		int i=start-1;
 //		for(int j=0;j<end;j++) {
 //			if(arr[j]<=pivot) {
-//				i++;
-//				int temp=arr[i];
 
-
-
-
-
-
-
-
-
-
-
-
-
-		
-	}
-	  
-	}
 
 
 	public static void display(int[] arr){
