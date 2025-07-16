@@ -1,6 +1,6 @@
 
 
-	public static int partition(int[] arr,int start,int end) {
+
 		
 		//If first element considered as pivot
 		int i=start;
