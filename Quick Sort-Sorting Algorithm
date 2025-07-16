@@ -2,7 +2,7 @@
 
 
 		
-		//If first element considered as pivot
+
 		int i=start;
 		int j=end;
 		
