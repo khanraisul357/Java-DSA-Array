@@ -11,9 +11,6 @@
 
 
 
-		}
-	}
-	
 	public static void main(String[] args) {
 		int[] array= {15,7,3,9,1,12};
 		int start=0;
