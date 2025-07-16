@@ -3,9 +3,6 @@
 
 		
 
-		int i=start;
-		int j=end;
-		
 		int pivot=arr[start];
 		
 		while(i<j) {
