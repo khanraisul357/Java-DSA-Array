@@ -1,1 +1,157 @@
+package sorting_algorithm.quick_sort.ascending_order;
 
+public class QuickSortReverseSortedArrayInAscendingOrder {
+
+	//In best/average case--> Time Complexity= O(n log n) & In worst case--> Time Complexity= O(n^2) 
+	public static int partition(int[] arr,int start,int end) {
+		
+		//Array is sorted or nearly sorted & middle element selected as pivot(best case)
+//		int i=start;
+//		int j=end;
+//		int pivotIndex=start+(end-start)/2;
+//		int pivot=arr[pivotIndex];
+//		
+//		while(i<j) {
+		
+//			while(i<=end && arr[i]<=pivot ) {
+//				i++;
+//			}
+		
+//			while(j>=start && arr[j]>pivot ) {
+//				j--;
+//			}
+		
+//			if(i<j) {
+//				int temp=arr[i];
+//				arr[i]=arr[j];
+//				arr[j]=temp;
+		
+//		       if(i==pivotIndex) {
+//			      pivotIndex=j;
+//		       }
+//		       else if(j==pivotIndex) {
+//			      pivotIndex=i;
+//		       }
+		
+//			}
+//			
+//		}
+//		
+//		int temp=arr[pivotIndex];
+//		arr[pivotIndex]=arr[j];
+//		arr[j]=temp;
+//		
+//		return j;
+		
+		
+		//Array is random order & random element selected as pivot(average case)
+		int i=start;
+		int j=end;
+		int pivotIndex=start + (int)(Math.random() * (end - start + 1));
+
+		int pivot=arr[pivotIndex];
+		
+
+		while(i<j) {
+			
+			while(i<=end && arr[i]<=pivot ) {
+				i++;
+			}
+			
+			while(j>=start && arr[j]>pivot ) {
+				j--;
+			}
+			
+			if(i<j) {
+				
+				int temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+				
+				if(i==pivotIndex) {
+					pivotIndex=j;
+				}
+				else if(j==pivotIndex) {
+					pivotIndex=i;
+				}
+				
+			}			
+			
+		}
+		
+		
+		int temp=arr[pivotIndex];
+		arr[pivotIndex]=arr[j];
+		arr[j]=temp;
+		
+		return j;
+		
+		
+		//Hoare Partition Scheme: first element selected as pivot(worst case)
+//		int i=start;
+//		int j=end;
+//		
+//		int pivot=arr[start];
+//		
+//		while(i<j) {
+//			while(i<=end && arr[i]<=pivot ) {
+//				i++;
+//			}
+//			while(j>=start && arr[j]>pivot ) {
+//				j--;
+//			}
+//			if(i<j) {
+//				int temp=arr[i];
+//				arr[i]=arr[j];
+//				arr[j]=temp;
+//			}
+//			
+//		}
+//		
+//		int temp=arr[start];
+//		arr[start]=arr[j];
+//		arr[j]=temp;
+//		
+//		return j;
+		
+		
+		//Lomuto Partition Scheme: last element selected as pivot(worst case)
+//		int pivot=arr[end];
+//		int i=start-1;
+//		for(int j=0;j<end;j++) {
+//			if(arr[j]<=pivot) {
+//				i++;
+//				int temp=arr[i];
+//				arr[i]=arr[j];
+//				arr[j]=temp;
+//			}
+//		}
+//		
+//		i++;
+//		int temp=arr[i];
+//		arr[i]=arr[end];
+//		arr[end]=temp;
+//		
+//		return end;
+		
+	}
+	
+	public static void swap(int[] arr,int i,int j) {
+		int temp=arr[i];
+		arr[i]=arr[j];
+		arr[j]=temp;
+	}
+	public static void quickSort(int[] arr,int start,int end) {
+		
+		if(start<end) {
+			  int pivotIndex=partition(arr,start,end);
+			    quickSort(arr,start,pivotIndex-1);
+			    quickSort(arr,pivotIndex+1,end);
+		}
+		
+		
+	  
+	}	
+
+
+}
