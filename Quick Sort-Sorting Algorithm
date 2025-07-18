@@ -190,7 +190,7 @@ public class Main {
 
 package sorting_algorithm.quick_sort.descending_order;
 
-public class QuickSortReverseSortedArrayInDescendingOrder {
+class QuickSortReverseSortedArrayInDescendingOrder {
 
 	//In best/average case--> Time Complexity= O(n log n) & In worst case--> Time Complexity= O(n^2) 
 	public static int partition(int[] arr,int start,int end) {
