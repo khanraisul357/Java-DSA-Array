@@ -346,7 +346,7 @@ class QuickSortReverseSortedArrayInDescendingOrder {
 
 
 
-package sorting_algorithm.quick_sort.descending_order;
+
 
 public class Main {
 	
