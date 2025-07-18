@@ -346,3 +346,28 @@ class QuickSortReverseSortedArrayInDescendingOrder {
 
 
 
+package sorting_algorithm.quick_sort.descending_order;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		int[] array= {12,15,3,4,1,6};
+		int start=0;
+		int end=(array.length)-1;
+		
+		QuickSortReverseSortedArrayInDescendingOrder.quickSort(array,start,end);
+		
+
+		if(array.length<2) {
+			System.out.println("Array is already sorted");
+		}
+		else {
+			System.out.println("Sorted Array: ");
+			for(int a:array){
+				System.out.print(a+" ");
+			}
+		}
+
+	}
+	
+}
