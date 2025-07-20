@@ -8,5 +8,4 @@ Worst Case(reversed order/reverse sorted) select pivot through median-of-3 or ra
 
 
 Quick Sort Optimized Algorithm:
-Use median-of-3 technique to select pivot for nearly sorted,sorted array,reverse sorted array & when array is unidentified.
-Use random element as pivot for unsorted array
+
