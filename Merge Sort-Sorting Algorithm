@@ -1,1 +1,12 @@
+Best Case(sorted/nearly sorted & middle element is pivot)-->Time Complexity = O(n log n)
+Average Case(random order & random element is pivot)-->Time Complexity = O(n log n)
+Worst Case(reversed order/reverse sorted & first or last element is pivot)-->Time Complexity = O(n^2)
 
+Best Case(sorted/nearly sorted) select middle element as pivot or select pivot through median-of-3 for sorted,nearly sorted array.
+Average Case(random order/unsorted array) select random element as pivot.
+Worst Case(reversed order/reverse sorted) select pivot through median-of-3 or random element as pivot to avoid worst-case.
+
+
+Quick Sort Optimized Algorithm:
+Use median-of-3 technique to select pivot for nearly sorted,sorted array,reverse sorted array & when array is unidentified.
+Use random element as pivot for unsorted array
