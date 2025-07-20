@@ -1,3 +1,1 @@
 Best Case(sorted/nearly sorted & middle element is pivot)-->Time Complexity = O(n log n)
-Average Case(random order & random element is pivot)-->Time Complexity = O(n log n)
-Worst Case(reversed order/reverse sorted & 
