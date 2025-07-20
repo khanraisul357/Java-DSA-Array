@@ -4,4 +4,4 @@ Worst Case(reversed order/reverse sorted & first or last element is pivot)-->Tim
 
 Best Case(sorted/nearly sorted) select middle element as pivot or select pivot through median-of-3 for sorted,nearly sorted array.
 Average Case(random order/unsorted array) select random element as pivot.
-Worst Case(reversed order/reverse sorted) select pivot through median-of-3 or random element as pivot to avoid worst-c
+Worst Case(reversed order/
