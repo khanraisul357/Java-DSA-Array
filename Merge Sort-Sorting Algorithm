@@ -7,4 +7,4 @@ Average Case(random order/unsorted array) select random element as pivot.
 Worst Case(reversed order/reverse sorted) select pivot through median-of-3 or random element as pivot to avoid worst-case.
 
 
-Quick Sort Optimized Algo
+Quick S
