@@ -3,4 +3,3 @@ Average Case(random order & random element is pivot)-->Time Complexity = O(n log
 Worst Case(reversed order/reverse sorted & first or last element is pivot)-->Time Complexity = O(n^2)
 
 Best Case(sorted/nearly sorted) select middle element as pivot or select pivot through median-of-3 for sorted,nearly sorted array.
-Average Case(random order/unsorted array) select random element as pivot
