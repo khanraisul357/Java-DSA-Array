@@ -53,8 +53,6 @@ class MergeSortInAscendingOrder {
 
 
 
-package sorting_algorithm.merge_sort.ascending_order;
-
 public class Main {
 
 	public static void main(String[] args) {
