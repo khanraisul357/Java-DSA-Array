@@ -87,7 +87,7 @@ public class Main {
 
 package sorting_algorithm.merge_sort.descending_order;
 
-public class MergeSortInDescendingOrder {	
+class MergeSortInDescendingOrder {	
 	
 
 	public static void merge(int[] arr,int start,int mid,int end) {
