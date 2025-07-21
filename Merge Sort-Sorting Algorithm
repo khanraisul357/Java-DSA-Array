@@ -1,6 +1,6 @@
 package sorting_algorithm.merge_sort.ascending_order;
 
-public class MergeSortInAscendingOrder {
+class MergeSortInAscendingOrder {
 	
 	//In best/average/worst case--> Time Complexity = O(n log n)
 	public static void merge(int[] arr,int start,int mid,int end) {
