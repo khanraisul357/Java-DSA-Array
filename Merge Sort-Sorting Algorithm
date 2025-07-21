@@ -51,3 +51,32 @@ class MergeSortInAscendingOrder {
 
 }
 
+
+
+package sorting_algorithm.merge_sort.ascending_order;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int[] array= {16,7,4,11,2,19};
+		int start=0;
+		int end=(array.length)-1;
+		
+		MergeSortInAscendingOrder.mergeSort(array,start,end);
+		
+		if(array.length<2) {
+			System.out.println("Array is already sorted!");
+		}
+		
+		else {
+			
+			for(int a:array){
+				System.out.println(a);
+			}
+			
+		}
+		
+	}
+
+}
