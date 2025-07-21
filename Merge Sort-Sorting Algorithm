@@ -145,3 +145,33 @@ class MergeSortInDescendingOrder {
 	}
 
 }
+
+
+
+package sorting_algorithm.merge_sort.descending_order;
+
+public class Main {
+
+public static void main(String[] args) {
+		
+		int[] array= {15,7,3,9,1,12};
+		int start=0;
+		int end=(array.length)-1;
+		
+		MergeSortInDescendingOrder.mergeSort(array,start,end);
+		
+		if(array.length<2) {
+			System.out.println("Array is already sorted!");
+		}
+		
+		else {
+			
+			for(int a:array){
+				System.out.println(a);
+			}
+			
+		}
+		
+	}
+
+}
