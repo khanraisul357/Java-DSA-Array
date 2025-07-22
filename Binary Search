@@ -1,5 +1,3 @@
--->In Descending Order
-
 package sorting_algorithm.merge_sort.descending_order;
 
 public class Main {
