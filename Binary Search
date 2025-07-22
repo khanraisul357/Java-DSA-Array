@@ -1,15 +1,4 @@
 
-			
-			for(int a:array){
-
-			
-		}
-		
-	}
-
-}
-
-
 
 package sorting_algorithm.merge_sort.descending_order;
 
