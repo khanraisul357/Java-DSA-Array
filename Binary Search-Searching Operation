@@ -1,8 +1,4 @@
 
-		}
-		
-		else {
-			
 			for(int a:array){
 				System.out.println(a);
 			}
