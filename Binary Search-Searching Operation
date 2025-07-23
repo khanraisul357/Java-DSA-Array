@@ -1,7 +1,5 @@
 
 		
-		MergeSortInDescendingOrder.mergeSort(array,start,end);
-		
 		if(array.length<2) {
 			System.out.println("Array is already sorted!");
 		}
