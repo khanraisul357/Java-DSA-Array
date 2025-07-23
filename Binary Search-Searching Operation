@@ -1,6 +1,4 @@
 
-
-		int end=(array.length)-1;
 		
 		MergeSortInDescendingOrder.mergeSort(array,start,end);
 		
