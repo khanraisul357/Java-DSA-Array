@@ -1,17 +1,4 @@
-
-		
-		if(!found) {
-			System.out.printf("Target Not Found!");
-		}
-		else {
-			System.out.printf("Target %d Found!\nposition = %d\nindex = %d\n",target,mid+1,mid);
-		}
-		
-	}
-	
-	
-	
-	public static void merge(int[] arr,int start,int mid,int end) {
+public static void merge(int[] arr,int start,int mid,int end) {
 		int i=start;
 		int j=mid+1;
 		int[] temp=new int[end-start+1];
