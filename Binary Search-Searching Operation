@@ -81,7 +81,4 @@ public class BinarySearch {
 			merge(arr,start,mid,end);
 		}
 		
-	}
 	
-
-}
