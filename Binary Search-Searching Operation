@@ -1,3 +1,2 @@
-		int mid=start+(end-start)/2;//(start+end)/2;
-			mergeSort(arr,start,mid);
+mergeSort(arr,start,mid);
 			mergeSort(arr,mid+1,end);
