@@ -1,22 +1,4 @@
-while(i<=mid) {
-			temp[k]=arr[i];
-			i++;
-			k++;
-			
-		}
-		while(j<=end) {
-			temp[k]=arr[j];
-			j++;
-			k++;
-		
-		}
-		
-		for(int idx=0;idx<temp.length;idx++) {
-			arr[start+idx]=temp[idx];
-		}
-		
-	}
-	
+
 	public static void mergeSort(int[] arr,int start,int end) {
 		if(start<end) {
 			int mid=start+(end-start)/2;//(start+end)/2;
