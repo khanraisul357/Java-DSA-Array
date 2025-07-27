@@ -1,10 +1,5 @@
 
-			}
-			else {
-				temp[k]=arr[j];
-				j++;
-				k++;
-			}
+	
 		}
 		
 		while(i<=mid) {
