@@ -1,12 +1,4 @@
 
-		
-			
-	
-			System.out.printf("Target %d Found!\nposition = %d\nindex = %d\n",target,mid+1,mid);
-		}
-		
-	}
-	
 	
 	
 	public static void merge(int[] arr,int start,int mid,int end) {
