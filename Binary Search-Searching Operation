@@ -3,8 +3,7 @@
 			
 		}
 		
-		if(!found) {
-			System.out.printf("Target Not Found!");
+		if(!foundund!");
 		}
 		else {
 			System.out.printf("Target %d Found!\nposition = %d\nindex = %d\n",target,mid+1,mid);
