@@ -1,10 +1,5 @@
 
-				start=mid+1;
-			}
-			else if(target==arr[mid]) {
-				found=true;
-				break;
-			}
+		
 			
 		}
 		
