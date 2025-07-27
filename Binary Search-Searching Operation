@@ -1,8 +1,4 @@
 
-			arr[start+idx]=temp[idx];
-		}
-		
-	}
 	
 	public static void mergeSort(int[] arr,int start,int end) {
 		if(start<end) {
