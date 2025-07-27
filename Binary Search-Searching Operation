@@ -1,14 +1,4 @@
-package array_operations.searching_operation;
 
-public class BinarySearch {
-	
-	//In best case(Target is at mid index on first iteration) Time complexity = O(1) & In average/worst case Time complexity =  O(log n)
-	public static void binarySearch(int[] arr,int target) {
-		int start=0;
-		int end=arr.length-1;
-		int mid=0;
-		boolean found=false;
-		while(start<=end) {
 		    mid=start+(end-start)/2;
 			
 			if(target<arr[mid]) {
